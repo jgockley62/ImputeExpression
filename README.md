@@ -2,19 +2,19 @@
 Vignette on how to Impute Gene Expression 
 
 ## Pull the LDRef Panel
-mkdir LDREF
-cd LDREF/
-wget https://data.broadinstitute.org/alkesgroup/FUSION/LDREF.tar.bz2 
-tar xjvf LDREF.tar.bz2 
-cd ..
-
+mkdir LDREF . 
+cd LDREF/ . 
+wget https://data.broadinstitute.org/alkesgroup/FUSION/LDREF.tar.bz2 . 
+tar xjvf LDREF.tar.bz2   
+cd ..  
+  
 ## Pull the Weights
-mkdir Weights
-aws s3 cp s3://jkg-s3-synapseencryptedexternalbucket-zszdd03ghnb2/ROSMAP/Chr21_Weights_K9/ALL/ Weights/ --recursive
+mkdir Weights . 
+aws s3 cp s3://jkg-s3-synapseencryptedexternalbucket-zszdd03ghnb2/ROSMAP/Chr21_Weights_K9/ALL/ Weights/ --recursive . 
 
 ## Pull Ref Data
-aws s3 cp s3://jkg-s3-synapseencryptedexternalbucket-zszdd03ghnb2/ROSMAP/Genotype_Imputed1000G/Binary_Cleaned/chr21/ . --recursive
-aws s3 cp s3://jkg-s3-synapseencryptedexternalbucket-zszdd03ghnb2/ROSMAP/Total_IDs.txt .
+aws s3 cp s3://jkg-s3-synapseencryptedexternalbucket-zszdd03ghnb2/ROSMAP/Genotype_Imputed1000G/Binary_Cleaned/chr21/ . --recursive . 
+aws s3 cp s3://jkg-s3-synapseencryptedexternalbucket-zszdd03ghnb2/ROSMAP/Total_IDs.txt .  
 
 ## Process Variants and Run Base Association
 ./plink --bfile AMP-AD_ROSMAP_Rush-Broad_AffymetrixGenechip6_Imputed_chr21_ReNamed --extract LDREF/1000G.EUR.21.bim --make-bed --out foo
