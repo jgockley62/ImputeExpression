@@ -2,9 +2,9 @@
 Vignette on how to Impute Gene Expression 
 
 ## Pull the LDRef Panel
-mkdir LDREF . 
-cd LDREF/ . 
-wget https://data.broadinstitute.org/alkesgroup/FUSION/LDREF.tar.bz2 . 
+mkdir LDREF  
+cd LDREF/  
+wget https://data.broadinstitute.org/alkesgroup/FUSION/LDREF.tar.bz2  
 tar xjvf LDREF.tar.bz2   
 cd ..  
   
