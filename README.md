@@ -1,6 +1,6 @@
 # ImputeExpression
-Vignette on how to Impute Gene Expression 
-Slected Scripts/Repos pulled from the following:  
+Vignette on how to Impute Gene Expression  
+Slected Scripts/Repos pulled from the following:   
 ```
  https://github.com/bulik/ldsc
  https://github.com/gusevlab/fusion_twas
