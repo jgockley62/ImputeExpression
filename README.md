@@ -14,8 +14,8 @@ Slected Scripts/Repos pulled from the following:
  cd ..  
 ```
 ### Pull Ref Data
-aws s3 cp s3://jkg-s3-synapseencryptedexternalbucket-zszdd03ghnb2/ROSMAP/Genotype_Imputed1000G/Binary_Cleaned/chr21/ . --recursive . 
-
+Reference Data are the Plink Genotype files in binary (bed/bim/fam) format. All thats needed for this set of weights is chromosome 21 genotyping data.  
+  
 ### Process Variants and Run Base Association
 ```
  ./plink --bfile AMP-AD_ROSMAP_Rush-Broad_AffymetrixGenechip6_Imputed_chr21_ReNamed --extract LDREF/1000G.EUR.21.bim --make-bed --out foo
