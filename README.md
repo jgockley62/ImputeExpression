@@ -14,7 +14,7 @@ Slected Scripts/Repos pulled from the following:
  cd ..  
 ```
 ### Pull Ref Data
-Reference Data are the Plink Genotype files in binary (bed/bim/fam) format. All thats needed for this set of weights is chromosome 21 genotyping data.  
+Reference Data are the Plink Genotype files in binary (bed/bim/fam) format. All thats needed for this set of weights is chromosome 21 genotyping data. For the code below this file is referenced as: AMP-AD_ROSMAP_Rush-Broad_AffymetrixGenechip6_Imputed_chr21_ReNamed  
   
 ### Process Variants and Run Base Association
 ```
